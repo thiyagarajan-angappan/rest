@@ -32,10 +32,10 @@
        <artifactId>maven-war-plugin</artifactId>
        <configuration>
           <archive>
-			<!-- <manifest>
+			<manifest>
 				<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
 				<addClasspath>true</addClasspath>
-			</manifest>  -->
+			</manifest>
              <manifestEntries>
                 <Dependencies>org.slf4j</Dependencies>
              </manifestEntries>
@@ -71,12 +71,12 @@
 	    <version>1.19.4</version>
 	</dependency>
 
-	<!-- <dependency>
+	<dependency>
 		<groupId>co.elastic.apm</groupId>
 		<artifactId>apm-agent-attach</artifactId>
 		<version>1.6.1</version>
 	</dependency>
-	<dependency>
+	<!-- <dependency>
 		<groupId>co.elastic.apm</groupId>
 		<artifactId>apm-agent-api</artifactId>
 		<version>1.6.1</version>

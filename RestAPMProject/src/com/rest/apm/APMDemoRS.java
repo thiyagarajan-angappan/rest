@@ -29,19 +29,11 @@ public class APMDemoRS {
 		return Response.ok(resp).build();
 	}
 
-	/*
-	@GET
+	
+	/*@GET
 	@Path("/couriers")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getCoureirs() {
-
-		Map<String, String> apmConfig = new HashMap<String, String>();
-		apmConfig.put("service_name", "apmdemoapp");
-		apmConfig.put("server_urls", "http://127.0.0.1:8200");
-		apmConfig.put("application_packages", "com.rest.apm");
-		System.out.println("---> attaching apm");
-		ElasticApmAttacher.attach(apmConfig);
-		System.out.println("---> attached apm");
 
 		System.out.println("---> starting T#getCouriers");
 		Transaction transaction = ElasticApm.startTransaction();
